@@ -75,6 +75,7 @@ def main():
     if not args.db_only:
         install_adaptive_index_defrag(args=args)
         install_who_is_active(args=args)
+        print('\n')
 
 
 if __name__ == "__main__":
