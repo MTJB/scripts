@@ -9,6 +9,9 @@ def get_sqlcmd_cmdline(db_name='master', sql=None):
     sqlcmd = f"/opt/mssql-tools/bin/sqlcmd -s '\t' -b -U sa -S 127.0.0.1 -P " \
              f"'sqlP4..w0rd' -d '{db_name}' "
 
+    # sqlcmd has a character limit
+    # so pipe to a file if length is getting up there, copying the file to docker
+    # and dropping the file from the os
     if sql is not None and len(sql) > 500:
         f = open(file_name, 'x')
         f.write(sql)
