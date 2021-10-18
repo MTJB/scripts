@@ -5,5 +5,5 @@ Random collection of scripts I sometimes use, and some I didn't want to lose ğŸ¤
 
 ## List of scripts in this repository
 
-### [Database](./database)
+### [Database](database)
 * backupDatabase.sql
