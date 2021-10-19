@@ -8,4 +8,4 @@ Random collection of scripts I sometimes use, and some I didn't want to lose ðŸ¤
 * setupDb.py - Create a new MSSQL image, installing some helpful extras.
 
 ### [Database](database)
-* backupDatabase.sql - TSQL script to create a shrink log file, defrag indexes, and take a db backup. 
+* backupDatabase.sql - TSQL script to shrink DB log file, defrag indexes, and take a db backup. 
