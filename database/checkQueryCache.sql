@@ -22,6 +22,6 @@ CROSS APPLY sys.dm_exec_query_plan(qs.plan_handle) qp
 INNER JOIN sys.databases db on db.database_id = st.dbid
 WHERE db.name = DB_NAME()
 AND st.text NOT LIKE '%sys.dm_exec_query_stats%' -- ignore this query!
--- AND st.text LIKE '%{WUERY_TEXT}%'
+-- AND st.text LIKE '%{QUERY_TEXT}%'
 -- AND qs.last_execution_time > '2019-02-18 15:53:00'
 ORDER BY qs.total_elapsed_time desc

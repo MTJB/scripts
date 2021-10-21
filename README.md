@@ -9,4 +9,6 @@ Random collection of scripts I sometimes use, and some I didn't want to lose ðŸ¤
 
 ### [Database](database)
 * [backupDatabase.sql](database/backupDatabase.sql) - TSQL script to shrink DB log file, defrag indexes, and take a db backup. 
+* [checkIndexFragmentation.sql](database/checkIndexFragmentation.sql) - TSQL script to check index fragmentation on all tables. 
 * [checkQueryCache.sql](database/checkQueryCache.sql) - TSQL script to check slow running queries via MSSQL [DMVs](https://docs.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/system-dynamic-management-views?view=sql-server-ver15). 
+* [monitorForDeadlockEvents.sql](database/monitorForDeadlockEvents.sql) - TSQL to add a new extended event to the server which watches for Deadlocks occurring. 
