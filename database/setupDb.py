@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 import argparse
+import os
+import sys
 
 import docker
 import requests
 from docker.errors import NotFound
 
+dir = os.path.abspath(os.path.join(os.getcwd(), os.pardir))
+sys.path.extend([dir])
 from utils import SqlUtils
 
 docker_cl = docker.from_env()
